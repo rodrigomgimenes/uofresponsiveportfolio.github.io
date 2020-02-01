@@ -25,6 +25,21 @@
 		<!-- Favicons
 		================================================== -->
 		<link rel="shortcut icon" href="./assets/favicon/faviconR.png" />
+
+		<!-- Just to visualize rows and columns -->
+		<style>
+			.my-container {
+				border: 8px solid green;
+			}
+	
+			.my-row {
+				border: 3px solid red;
+			}
+	
+			.my-col {
+				border: 5px dotted blue;
+			}
+		</style>
 	
 	</head>
 
@@ -59,6 +74,32 @@
 
 		<!-- Welcome section
 		================================================== -->
+
+		<br><br>
+
+		<div class="container my-container">
+			<!-- FIRST Row
+			================================================== -->
+			<div class="row my-row">
+				<div class="col-4 my-col">
+					Row_1 Col_1
+				</div>
+				<div class="col-8 my-col">
+					Row_1 Col_2
+				</div>
+			</div>
+
+			<!-- SECOND Row
+			================================================== -->
+			<div class="row my-row">
+				<div class="col-4 my-col">
+					Row_2 Col_1
+				</div>
+				<div class="col-8 my-col">
+					Row_2 Col_2
+				</div>
+			</div>
+		</div> 
 
 		<!-- Footer
 		================================================== -->
