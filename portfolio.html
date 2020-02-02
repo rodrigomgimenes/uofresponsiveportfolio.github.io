@@ -26,6 +26,40 @@
 		<!-- Favicons
 		 ================================================== -->
 		<link rel="shortcut icon" href="./assets/favicon/faviconR.png" />
+
+<!-- JUST TESTING!! remember to put this in the css file -->
+<style>
+.img-responsive {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fadein_text:hover .img-responsive {
+  opacity: 0.3;
+}
+
+.fadein_text:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: #015668;
+  font-size: 36px;
+}
+</style>
 		
 	</head>
 
@@ -60,6 +94,67 @@
 
 		<!-- Portfolio section
 		 ================================================== -->
+		<div class="container pt">
+
+			<div class="row mt">
+				<div class="col-lg-6 col-lg-offset-3 centered">
+					<h3>MY PORTFOLIO</h3>
+					<hr>
+				</div>
+			</div> <!-- end of .row -->
+
+			<div class="row mt centered">
+				<div class="col-lg-12">
+					
+					<a class="zoom green" href="#">
+						<div class="fadein_text">
+							
+							<img class="img-responsive" src="assets/image/work001.jpg" alt="web development" height="500" width="1000" />
+							
+							<div class="middle">
+								<div class="text"><i class="fa fa-clock-o"></i>    Coming soon...</div>
+							</div>
+
+						</div>
+					</a>
+					
+					<p>Web Development</p>
+
+				</div>
+			</div> <!-- end of .row -->
+
+			<div class="row mt centered">	
+				
+				<div class="col-lg-6">
+					<a class="zoom green" href="#">
+						<div class="fadein_text">
+							
+							<img class="img-responsive" src="assets/image/work002.jpg" alt="programmer life style #1" height="500" width="800" />
+							
+							<div class="middle">
+								<div class="text"><i class="fa fa-clock-o"></i>    Coming soon...</div>
+							</div>
+
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-6">
+					<a class="zoom green" href="#">
+						<div class="fadein_text">
+							
+						<img class="img-responsive" src="assets/image/work003.jpg" alt="programmer life style #2" height="500" width="800" />
+							
+							<div class="middle">
+								<div class="text"><i class="fa fa-clock-o"></i>    Coming soon...</div>
+							</div>
+
+						</div>
+					</a>
+				</div>
+
+			</div> <!-- end of .row -->
+		</div> <!-- end of .container -->
 
 		<!-- Footer
 		 ================================================== -->
