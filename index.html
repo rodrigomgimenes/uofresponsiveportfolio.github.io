@@ -3,7 +3,7 @@
 	<head>
 
 		<!--- Basic Page Needs
-		================================================== -->
+		 ================================================== -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="Homework 02 - Responsive Portfolio using the Bootstrap CSS Framework">
@@ -12,46 +12,33 @@
 		<title>My New Responsive Portfolio with Bootstrap</title>
 	
 		<!--- Adding Viewport element
-		================================================== -->
+		 ================================================== -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 		<!-- Bootstrap
-		================================================== -->
+		 ================================================== -->
 		<link rel="stylesheet" href="./assets/css/bootstrap.css">
 
 		<!-- CSS
-		================================================== -->
+		 ================================================== -->
+		<link rel="stylesheet" href="css/fonts.css">
 
 		<!-- Favicons
-		================================================== -->
+		 ================================================== -->
 		<link rel="shortcut icon" href="./assets/favicon/faviconR.png" />
-
-		<!-- Just to visualize rows and columns -->
-		<style>
-			.my-container {
-				border: 8px solid green;
-			}
-	
-			.my-row {
-				border: 3px solid red;
-			}
-	
-			.my-col {
-				border: 5px dotted blue;
-			}
-		</style>
 	
 	</head>
 
 	<body>
 
 		<!-- Navbar
-		================================================== -->
+		 ================================================== -->
 		<div class="navbar navbar-inverse navbar-static-top">
 			<div class="container">
 
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<!-- HINT: span*3 + TAB -->
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -61,48 +48,61 @@
 				</div> <!-- end of .navbar-header -->
 			
 				<div class="navbar-collapse collapse">
+					<!-- HINT: ul>li*4 + TAB -->
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="index.html">Welcome</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="portfolio.html">Portfolio</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul> <!-- end of Unordered HTML List -->
-				</div> <!-- end of.nav-collapse -->
+				</div> <!-- end of .nav-collapse -->
 
-		</div> <!-- end of .container -->
+		 	</div> <!-- end of .container -->
 		</div> <!-- end of .navbar -->
 
 		<!-- Welcome section
-		================================================== -->
-
-		<br><br>
-
-		<div class="container my-container">
-			<!-- FIRST Row
-			================================================== -->
-			<div class="row my-row">
-				<div class="col-4 my-col">
-					Row_1 Col_1
-				</div>
-				<div class="col-8 my-col">
-					Row_1 Col_2
-				</div>
-			</div>
-
-			<!-- SECOND Row
-			================================================== -->
-			<div class="row my-row">
-				<div class="col-4 my-col">
-					Row_2 Col_1
-				</div>
-				<div class="col-8 my-col">
-					Row_2 Col_2
-				</div>
-			</div>
-		</div> 
+		 ================================================== -->
 
 		<!-- Footer
-		================================================== -->
+		 ================================================== -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+
+					<!-- =================== My Contact =================== -->
+					<div class="col-lg-4">
+						<h4>My Contact</h4>
+						<p class="address">
+							<span><i class="fa fa-user"></i>    Rodrigo Macedo Gimenes</span><br />
+							<span><i class="fa fa-map-marker"></i>  XXX XXXXXXXX XXXXXX XXXX<br /></span>
+							<span>  XXXXX XXXX, ON XXX XXX CA</span><br />
+							<span><i class="fa fa-phone"></i>   (XXX)XXX-XXXX</span><br />
+							<span><i class="fa fa-envelope"></i>    rodrigomacedogimenes@gmail.com</span>
+						</p> <!-- end of .address -->
+					</div> <!-- end of .col-lg-4 -->
+					
+					<!-- ================== Social Links ================== -->
+					<div class="col-lg-4">
+						<ul class="social-links">
+							<li><a href="https://www.facebook.com/profile.php?id=100040648456479" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/rodrigo-m-gimenes-b0a1a227/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://www.instagram.com/rodrigomgimenes/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://join.skype.com/invite/B9JicSF0g7Nl" target="_blank"><i class="fa fa-skype"></i></a></li>
+							<li><a href="https://github.com/rodrigomgimenes" target="_blank"><i class="fa fa-github"></i></a></li>
+						</ul> <!-- end .social -->	
+					</div> <!-- end of .col-lg-4 -->
+					
+					<!-- =================== Copyright ==================== -->
+					<div class="col-lg-4">
+						<ul class="copyright">
+							<li>&copy; Copyright 2020 RMG</li>
+							<li>Design by Rodrigo M. Gimenes</li>   
+						</ul> <!-- end .copyright -->
+					</div> <!-- end of .col-lg-4 -->
+				
+				</div> <!-- end of .row -->
+			</div> <!-- end of .container -->
+		</div> <!-- end of #footer -->
 		
 	</body>
 </html>
