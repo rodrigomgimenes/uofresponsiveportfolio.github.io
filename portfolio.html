@@ -9,7 +9,7 @@
 		<meta name="description" content="Homework 02 - Responsive Portfolio using the Bootstrap CSS Framework">
 		<meta name="author" content="Rodrigo M. Gimenes">
 		 
-		<title>My New Responsive Portfolio with Bootstrap</title>
+		<title>Portfolio with Bootstrap</title>
 	 
 		<!--- Adding Viewport element
 		 ================================================== -->
@@ -21,45 +21,12 @@
 	
 		<!-- CSS
 		 ================================================== -->
-		<link rel="stylesheet" href="css/fonts.css">
+		 <link rel="stylesheet" href="./assets/css/fonts.css">
+		 <link rel="stylesheet" href="./assets/css/styles.css">
 	
 		<!-- Favicons
 		 ================================================== -->
 		<link rel="shortcut icon" href="./assets/favicon/faviconR.png" />
-
-<!-- JUST TESTING!! remember to put this in the css file -->
-<style>
-.img-responsive {
-  opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.fadein_text:hover .img-responsive {
-  opacity: 0.3;
-}
-
-.fadein_text:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  color: #015668;
-  font-size: 36px;
-}
-</style>
 		
 	</head>
 
@@ -84,7 +51,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.html">Welcome</a></li>
 						<li><a href="about.html">About</a></li>
-						<li class="active"><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="portfolio.html"><b>Portfolio</b></a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul> <!-- end of Unordered HTML List -->
 				</div> <!-- end of.nav-collapse -->
@@ -94,45 +61,45 @@
 
 		<!-- Portfolio section
 		 ================================================== -->
-		<div class="container pt">
+		<div class="container container-helper">
 
-			<div class="row mt">
+			<div class="row row-helper">
 				<div class="col-lg-6 col-lg-offset-3 centered">
 					<h3>MY PORTFOLIO</h3>
 					<hr>
 				</div>
 			</div> <!-- end of .row -->
 
-			<div class="row mt centered">
+			<div class="row row-helper centered">
 				<div class="col-lg-12">
 					
-					<a class="zoom green" href="#">
+					<a href="#">
 						<div class="fadein_text">
 							
-							<img class="img-responsive" src="assets/image/work001.jpg" alt="web development" height="500" width="1000" />
+							<img class="img-responsive" src="assets/image/work001.jpg" alt="web development" style="display: block; margin-left: auto; margin-right: auto; height: 500; width: 50%;" />
 							
-							<div class="middle">
-								<div class="text"><i class="fa fa-clock-o"></i>    Coming soon...</div>
+							<div class="middle centered">
+								<div class="text"><i class="plus-size-icon fa fa-hourglass-1"></i>    Coming soon...</div>
 							</div>
 
 						</div>
 					</a>
 					
-					<p>Web Development</p>
+					<!-- <p>Web Development</p> -->
 
 				</div>
 			</div> <!-- end of .row -->
 
-			<div class="row mt centered">	
+			<div class="row row-helper centered">	
 				
 				<div class="col-lg-6">
-					<a class="zoom green" href="#">
+					<a href="#">
 						<div class="fadein_text">
 							
-							<img class="img-responsive" src="assets/image/work002.jpg" alt="programmer life style #1" height="500" width="800" />
+							<img class="img-responsive" src="assets/image/work002.jpg" alt="programmer life style #1" style="height: 500; width: 800;" />
 							
 							<div class="middle">
-								<div class="text"><i class="fa fa-clock-o"></i>    Coming soon...</div>
+								<div class="text"><i class="plus-size-icon fa fa-hourglass-1"></i>    Coming soon...</div>
 							</div>
 
 						</div>
@@ -140,13 +107,13 @@
 				</div>
 
 				<div class="col-lg-6">
-					<a class="zoom green" href="#">
+					<a href="#">
 						<div class="fadein_text">
 							
-						<img class="img-responsive" src="assets/image/work003.jpg" alt="programmer life style #2" height="500" width="800" />
+						<img class="img-responsive" src="assets/image/work003.jpg" alt="programmer life style #2" style="height: 500; width: 800;" />
 							
 							<div class="middle">
-								<div class="text"><i class="fa fa-clock-o"></i>    Coming soon...</div>
+								<div class="text"><i class="plus-size-icon fa fa-hourglass-1"></i>    Coming soon...</div>
 							</div>
 
 						</div>
@@ -158,13 +125,13 @@
 
 		<!-- Footer
 		 ================================================== -->
-		<div id="footer">
+		 <div id="footer">
 			<div class="container">
 				<div class="row">
 
 					<!-- =================== My Contact =================== -->
 					<div class="col-lg-4">
-						<h4>My Contact</h4>
+						<h4><strong>My Contact</strong></h4>
 						<p class="address">
 							<span><i class="fa fa-user"></i>    Rodrigo Macedo Gimenes</span><br />
 							<span><i class="fa fa-map-marker"></i>  XXX XXXXXXXX XXXXXX XXXX<br /></span>
@@ -175,21 +142,23 @@
 					</div> <!-- end of .col-lg-4 -->
 					
 					<!-- ================== Social Links ================== -->
-					<div class="col-lg-4">
+					<div class="col-lg-5">
+						<h4 class="social-title"><strong>Social Media</strong></h4>
 						<ul class="social-links">
-							<li><a href="https://www.facebook.com/profile.php?id=100040648456479" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/rodrigo-m-gimenes-b0a1a227/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.instagram.com/rodrigomgimenes/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="https://join.skype.com/invite/B9JicSF0g7Nl" target="_blank"><i class="fa fa-skype"></i></a></li>
-							<li><a href="https://github.com/rodrigomgimenes" target="_blank"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100040648456479" target="_blank"><i class="plus-size-icon fa fa-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/rodrigo-m-gimenes-b0a1a227/" target="_blank"><i class="plus-size-icon fa fa-linkedin"></i></a></li>
+							<li><a href="https://www.instagram.com/rodrigomgimenes/" target="_blank"><i class="plus-size-icon fa fa-instagram"></i></a></li>
+							<li><a href="https://join.skype.com/invite/B9JicSF0g7Nl" target="_blank"><i class="plus-size-icon fa fa-skype"></i></a></li>
+							<li><a href="https://github.com/rodrigomgimenes" target="_blank"><i class="plus-size-icon fa fa-github"></i></a></li>
 						</ul> <!-- end .social-links -->	
 					</div> <!-- end of .col-lg-4 -->
 					
 					<!-- =================== Copyright ==================== -->
-					<div class="col-lg-4">
-						<ul class="copyright">
-							<li>&copy; Copyright 2020 RMG</li>
-							<li>Design by Rodrigo M. Gimenes</li>   
+					<div class="col-lg-3">
+						<br /><br /><br /><br />
+						<ul class="copyright centered">
+							<li>&copy; Copyright 2020</li>
+							<li>Design by RMG</li>   
 						</ul> <!-- end .copyright -->
 					</div> <!-- end of .col-lg-4 -->
 				

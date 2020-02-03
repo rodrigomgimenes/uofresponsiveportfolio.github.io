@@ -1,0 +1,293 @@
+/*
+=====================================================================
+*   RMG v1.0 Layout Stylesheet
+*   02-02-2020
+===================================================================== 
+*/
+
+
+/*
+===================================================================== 
+*   Default Style
+=====================================================================  
+*/
+body {
+  	background-color: #ffffff;
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #216583;
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/*
+===================================================================== 
+*   Links Style
+=====================================================================  
+*/
+a {
+    color: #309790;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #216583;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/*
+===================================================================== 
+*   Navbar
+=====================================================================  
+*/
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.navbar-inverse {
+	padding-bottom: 70px;
+	padding-top: 70px;
+}
+
+.navbar-inverse {
+	background-color: #00818a;
+	border-color: #017981;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #185068;
+}
+
+.navbar-inverse .navbar-nav > li > a > b {
+	color: #185068;
+	text-decoration: none;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+	background-color: #185068;
+}
+
+.progress-bar-theme {
+  background-color: #216583;
+}
+
+/*
+===================================================================== 
+*   Helpers
+=====================================================================  
+*/
+.row-helper {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.container-helper {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/*
+===================================================================== 
+*   Image - Opacity
+=====================================================================  
+*/
+.img-responsive {
+	opacity: 1;
+	display: block;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+  
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+  
+.fadein_text:hover .img-responsive {
+	opacity: 0.3;
+}
+  
+.fadein_text:hover .middle {
+	opacity: 1;
+}
+  
+.text {
+	color: #293462;
+	font-size: 36px;
+}
+
+/*
+===================================================================== 
+*   Wrap Sections
+=====================================================================  
+*/
+#profile-pic {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: #f1f9f9;
+}
+
+
+#footer {
+	background-color: #293462;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+
+#footer p {
+	color: white;
+}
+
+#footer h4 {
+	color: white;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+/*
+===================================================================== 
+*   Icons Configuration
+=====================================================================  
+*/
+.glyphicon {
+	font-size: 50px;
+	color: #216583;
+}
+
+.leaf-icon {
+	font-size: 20px;
+	color: #216583;
+}
+
+.fa {
+	font-size: 20px;
+	color: #216583;
+}
+
+.plus-size-icon {
+	font-size: 35px;
+	color: #216583;
+}
+
+/*
+===================================================================== 
+*   Copyright
+=====================================================================  
+*/
+.copyright {
+    margin: 0;
+	padding: 0;
+ }
+
+.copyright li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+.copyright li {
+   display: inline;
+}
+
+.copyright li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #216583;
+}
+
+.copyright  li:first-child:before {
+    display: none;
+}
+
+/*
+===================================================================== 
+*   Social Links
+=====================================================================  
+*/
+.social-links {
+   margin: 18px 0 30px 0;
+   padding: 0;
+   font-size: 30px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+}
+
+ social-links li:first-child { margin-left: 0; }
