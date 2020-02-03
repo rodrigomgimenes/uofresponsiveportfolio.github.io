@@ -28,6 +28,16 @@
 		 ================================================== -->
 		<link rel="shortcut icon" href="./assets/favicon/faviconR.png" />
 		
+		<!-- JQuery
+		 ================================================== -->
+		 <!-- 
+			 [*] IMPORTANT: I needed to insert this library on my project. 
+							 Otherwise the bar button wouldn't work and I'd keep
+							 receiving this error message:
+			 "Uncaught Error: Bootstrap requires jQuery at bootstrap.min.js:7"
+		 -->
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		
 	</head>
 
 	<body>
@@ -230,5 +240,13 @@
 			</div> <!-- end of .container -->
 		</div> <!-- end of #footer -->
 		
+
+		<!-- Bootstrap core JavaScript
+		 ================================================== -->
+		 <!-- 
+			 [*] This file is necessary so the bar button works.
+		 -->
+		<script src="./assets/js/bootstrap.min.js"></script>
+
 	</body>
 </html>
