@@ -187,6 +187,12 @@ a:after {
 	font-size: 36px;
 }
 
+#img-about {
+	border-radius: 50%;
+	height: 25%;
+	width: 25%;
+}
+
 /*
 ===================================================================== 
 *   Wrap Sections
