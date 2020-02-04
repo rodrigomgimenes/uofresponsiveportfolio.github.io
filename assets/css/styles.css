@@ -25,7 +25,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: #216583;
+    color: #293462;
 }
 
 h1 {
@@ -59,7 +59,7 @@ p {
 =====================================================================  
 */
 a {
-    color: #309790;
+    color: #32407b;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -71,7 +71,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #216583;
+    color: #2e279d;
     text-decoration: none;
     outline: 0;
 }
@@ -93,7 +93,17 @@ a:after {
 .navbar {
 	text-transform: uppercase;
 	margin-bottom: 0px;
+
+	position: relative;
+	height: 400px;
+	min-height: 300px;
+	width: 100%;
+	background: #2e279d url(../image/moon_header.jpg) no-repeat top center;
+	background-size: cover !important;
+	 -webkit-background-size: cover !important;
+	overflow: hidden;
 }
+
 
 .navbar-inverse {
 	padding-bottom: 70px;
@@ -101,20 +111,21 @@ a:after {
 }
 
 .navbar-inverse {
-	background-color: #00818a;
-	border-color: #017981;
+	background-color: #32407b;
+	border-color: #32407b;
 }
 
 .navbar-inverse .navbar-nav > li > a {
 	color: white;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-	color: #185068;
+	color: #FE6845;
 }
 
 .navbar-inverse .navbar-nav > li > a > b {
-	color: #185068;
+	color: #FE6845;
 	text-decoration: none;
 }
 
@@ -130,11 +141,11 @@ a:after {
 
 .navbar-inverse .navbar-toggle {
 	border-color: transparent;
-	background-color: #185068;
+	background-color: #d84422;
 }
 
 .progress-bar-theme {
-  background-color: #216583;
+  background-color: #151965;
 }
 
 /*
@@ -201,14 +212,19 @@ a:after {
 #profile-pic {
 	padding-top: 70px;
 	padding-bottom: 70px;
-	background-color: #f1f9f9;
+	background-color: #e7eaf6;
 }
 
 
 #footer {
-	background-color: #293462;
-	padding-top: 50px;
-	padding-bottom: 50px; 
+	position: relative;
+	height: 400px;
+	min-height: 300px;
+	width: 100%;
+	background: #2e279d url(../image/moon_footer.jpg) no-repeat top center;
+	background-size: cover !important;
+	 -webkit-background-size: cover !important;
+	overflow: hidden;
 }
 
 #footer p {
@@ -228,23 +244,25 @@ a:after {
 */
 .glyphicon {
 	font-size: 50px;
-	color: #216583;
+	color: #293462;
 }
 
 #sm-glyphicon {
 	font-size: 20px;
-	color: #216583;
+	color: #293462;
 }
 
 .fa {
 	font-size: 20px;
-	color: #216583;
+	color: #846199;
 }
 
 .plus-size-icon {
 	font-size: 35px;
-	color: #216583;
+	color: #846199;
 }
+
+
 
 /*
 ===================================================================== 
@@ -254,6 +272,7 @@ a:after {
 .copyright {
     margin: 0;
 	padding: 0;
+	color: #755588;
  }
 
 .copyright li {
@@ -271,7 +290,6 @@ a:after {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #216583;
 }
 
 .copyright  li:first-child:before {
