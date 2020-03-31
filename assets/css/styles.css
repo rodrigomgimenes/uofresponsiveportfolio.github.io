@@ -158,7 +158,11 @@ a:after {
 
 .navbar-inverse .navbar-toggle {
 	border-color: transparent;
-	background-color: #d84422;
+	background-color: #5893D4;
+}
+.navbar-inverse .navbar-toggle:focus {
+	border-color: transparent;
+	background-color: #1F3C88;
 }
 
 .progress-bar-theme {
