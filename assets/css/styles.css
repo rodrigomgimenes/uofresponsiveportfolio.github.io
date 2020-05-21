@@ -49,6 +49,12 @@ p {
 	font-size: 16px;
 }
 
+#p_portfolio {
+	line-height: 28px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
 .centered {
   text-align: center;
 }
@@ -353,6 +359,21 @@ a:after {
 	font-size: 20px;
 	/* color: #846199; */
 	color: #FFFFFF;
+}
+
+.md-size-icon {
+	font-size: 25px;
+	color: #293462;
+	opacity: 0.5;
+	transform: scale(1.0);
+	margin-bottom: 15px;
+}
+
+.md-size-icon:hover
+{
+	transform: scale(1.4);
+	transition: transform 0.5s ease;
+	opacity: 1.0;
 }
 
 .plus-size-icon {
